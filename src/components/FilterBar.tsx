@@ -39,7 +39,7 @@ export function FilterBar({
           id="q"
           type="search"
           value={filters.q}
-          onChange={(e) => set({ q: e.target.value })}
+          onChange={(e) => { console.log("QCHANGE", e.target.value); set({ q: e.target.value }); }}
           placeholder="Search tracks, merchants, notes, places…"
           className="w-full rounded-md border border-border bg-secondary py-2.5 pl-9 pr-3 text-sm"
         />
