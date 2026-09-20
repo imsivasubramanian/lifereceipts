@@ -25,8 +25,8 @@ function Story() {
   const [i, setI] = useState(0);
   const c = chapters[i]!;
   const search: Record<string, string> = {};
-  if (c.filters.source) search.source = c.filters.source;
-  if (c.filters.month) search.month = c.filters.month;
+  if (c.filters.source) search["source"] = c.filters.source;
+  if (c.filters.month) search["month"] = c.filters.month;
 
   return (
     <Shell>
@@ -70,7 +70,7 @@ function Story() {
           </button>
           <Link
             to="/explore"
-            search={search}
+            search={{ source: search["source"] ?? "", month: search["month"] ?? "", category: "", q: "" }}
             className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
           >
             Explore moment

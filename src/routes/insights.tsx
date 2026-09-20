@@ -72,7 +72,7 @@ function Insights() {
             <PieChart>
               <Pie data={a.bySource} dataKey="value" nameKey="name" innerRadius={50} outerRadius={85}>
                 {a.bySource.map((_: unknown, i: number) => (
-                  <Cell key={i} fill={PIE_COLORS[i % PIE_COLORS.length]} />
+                  <Cell key={i} fill={PIE_COLORS[i % PIE_COLORS.length] as string} />
                 ))}
               </Pie>
               <Tooltip contentStyle={tooltipStyle} />

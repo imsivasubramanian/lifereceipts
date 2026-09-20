@@ -7,15 +7,13 @@ import { ReceiptCard } from "@/components/ReceiptCard";
 import { ReceiptModal } from "@/components/ReceiptModal";
 import { emptyFilters, filterRecords, type Filters, type Receipt } from "@/lib/receipts";
 
-type Search = { source?: string; month?: string; category?: string; q?: string };
+type Search = { source: string; month: string; category: string; q: string };
 
 export const Route = createFileRoute("/explore")({
-  validateSearch: (s: Record<string, unknown>): Search => ({
-    source: typeof s.source === "string" ? s.source : undefined,
-    month: typeof s.month === "string" ? s.month : undefined,
-    category: typeof s.category === "string" ? s.category : undefined,
-    q: typeof s.q === "string" ? s.q : undefined,
-  }),
+  validateSearch: (s: Record<string, unknown>): Search => {
+    const pick = (k: string) => (typeof s[k] === "string" ? (s[k] as string) : "");
+    return { source: pick("source"), month: pick("month"), category: pick("category"), q: pick("q") };
+  },
   head: () => ({
     meta: [
       { title: "Explore Receipts — LifeReceipts" },
@@ -36,10 +34,10 @@ function Explore() {
   const search = Route.useSearch();
   const [filters, setFiltersState] = useState<Filters>({
     ...emptyFilters,
-    source: search.source ?? "all",
-    category: search.category ?? "all",
-    q: search.q ?? "",
-    month: search.month ?? "",
+    source: search.source || "all",
+    category: search.category || "all",
+    q: search.q || "",
+    month: search.month || "",
   });
   const [page, setPage] = useState(0);
   const [selected, setSelected] = useState<Receipt | null>(null);
