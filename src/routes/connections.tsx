@@ -32,8 +32,9 @@ function Connections() {
         <p className="eyebrow">Connections</p>
         <h1 className="mt-1 font-display text-3xl font-semibold sm:text-4xl">Connected moments</h1>
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Records are grouped by calendar day using an index, then kept only when more than one
-          source is present. Every connection lists the rules that produced it.
+          Records are indexed by calendar day and by month + category in a single pass, then kept
+          only when more than one source is present. Each link below lists the rule that matched and
+          the values from the data that satisfied it.
         </p>
       </header>
 
@@ -52,7 +53,10 @@ function Connections() {
                 >
                   <span className="font-medium">{c.day}</span>
                   <span className="mt-0.5 block text-xs">
-                    {c.items.map((i) => SOURCE_META[i.source].icon).join(" → ")} · {c.reasons.length} reasons
+                    {c.counts.map((n) => `${SOURCE_META[n.source].icon} ${n.count}`).join(" · ")}
+                  </span>
+                  <span className="mt-0.5 block text-xs">
+                    {c.totalRecords} records · {c.reasons.length} matched rules
                   </span>
                 </button>
               </li>
@@ -66,6 +70,28 @@ function Connections() {
               <Link2 className="h-4 w-4 text-primary" aria-hidden="true" />
               <h2 className="font-display text-xl font-semibold">{active.day}</h2>
             </div>
+            <dl className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-xs text-muted-foreground">
+              <div>
+                <dt className="inline">Records: </dt>
+                <dd className="inline font-medium text-foreground">{active.totalRecords}</dd>
+              </div>
+              <div>
+                <dt className="inline">Sources: </dt>
+                <dd className="inline font-medium text-foreground">
+                  {active.counts.map((n) => `${SOURCE_META[n.source].label} ${n.count}`).join(", ")}
+                </dd>
+              </div>
+              <div>
+                <dt className="inline">Span: </dt>
+                <dd className="inline font-medium text-foreground">{active.spanLabel}</dd>
+              </div>
+              {active.spend > 0 && (
+                <div>
+                  <dt className="inline">Value: </dt>
+                  <dd className="inline font-medium text-foreground">{formatAmount(active.spend)}</dd>
+                </div>
+              )}
+            </dl>
 
             <ol className="mt-5">
               {active.items.map((r, i) => {
@@ -98,11 +124,14 @@ function Connections() {
 
             <div className="mt-6 rounded-lg border border-primary/30 bg-primary/5 p-4">
               <h3 className="eyebrow">Why connected?</h3>
-              <ul className="mt-2 space-y-1.5 text-sm">
+              <ul className="mt-2 space-y-2.5 text-sm">
                 {active.reasons.map((reason) => (
-                  <li key={reason} className="flex items-start gap-2">
+                  <li key={reason.rule + reason.evidence} className="flex items-start gap-2">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                    {reason}
+                    <span>
+                      <strong className="font-medium">{reason.rule}</strong>
+                      <span className="block text-muted-foreground">{reason.evidence}</span>
+                    </span>
                   </li>
                 ))}
               </ul>
