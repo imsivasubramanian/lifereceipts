@@ -49,6 +49,7 @@ function Explore() {
     setPage(0);
   };
 
+  console.log("FILTERS", JSON.stringify(filters));
   const results = useMemo(() => filterRecords(filters), [filters]);
   const pages = Math.max(1, Math.ceil(results.items.length / PAGE_SIZE));
   const current = Math.min(page, pages - 1);
