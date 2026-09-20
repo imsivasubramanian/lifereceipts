@@ -41,7 +41,7 @@ export function Timeline({ onPick, active }: { onPick?: (month: string) => void;
         </ul>
       </div>
       <p className="mt-2 text-xs text-muted-foreground">
-        {monthly[0].month} → {monthly[monthly.length - 1].month}. Select a bar to explore that month.
+        {monthly[0]?.month} → {monthly[monthly.length - 1]?.month}. Select a bar to explore that month.
       </p>
     </section>
   );
