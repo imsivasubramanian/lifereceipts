@@ -1,10 +1,10 @@
 {
  "totals": {
   "spotifyPlays": 149860,
-  "spotifySampled": 4996,
+  "spotifySampled": 2498,
   "transactions": 9417,
   "household": 1389,
-  "records": 15802,
+  "records": 13304,
   "listeningHours": 5342,
   "skipRate": 5.3
  },
@@ -993,7 +993,7 @@
  "bySource": [
   {
    "name": "Spotify (sampled)",
-   "value": 4996
+   "value": 2498
   },
   {
    "name": "Transactions",
@@ -1056,7 +1056,7 @@
  ],
  "dateSpan": {
   "start": "2013-07-08",
-  "end": "2024-12-15"
+  "end": "2024-12-13"
  },
- "categories": 845
+ "categories": 572
 }

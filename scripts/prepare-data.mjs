@@ -41,7 +41,7 @@ const monthCount = new Map();
 let totalMs = 0, skipped = 0;
 
 const spotifyRecords = [];
-const SAMPLE_EVERY = 30; // ~5k records kept for the explorer
+const SAMPLE_EVERY = 60; // ~5k records kept for the explorer
 spotify.forEach((r, idx) => {
   const ts = r.ts?.replace(" ", "T");
   const d = new Date(ts + "Z");
