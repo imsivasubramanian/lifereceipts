@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ConnectionsRouteImport } from './routes/connections'
 import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as StoryRouteImport } from './routes/story'
 
 const IndexRoute = IndexRouteImport.update({
@@ -29,6 +30,11 @@ const ExploreRoute = ExploreRouteImport.update({
   path: '/explore',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StoryRoute = StoryRouteImport.update({
   id: '/story',
   path: '/story',
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/connections': typeof ConnectionsRoute
   '/explore': typeof ExploreRoute
+  '/insights': typeof InsightsRoute
   '/story': typeof StoryRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/connections': typeof ConnectionsRoute
   '/explore': typeof ExploreRoute
+  '/insights': typeof InsightsRoute
   '/story': typeof StoryRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/connections': typeof ConnectionsRoute
   '/explore': typeof ExploreRoute
+  '/insights': typeof InsightsRoute
   '/story': typeof StoryRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/connections' | '/explore' | '/story'
+  fullPaths: '/' | '/connections' | '/explore' | '/insights' | '/story'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/connections' | '/explore' | '/story'
-  id: '__root__' | '/' | '/connections' | '/explore' | '/story'
+  to: '/' | '/connections' | '/explore' | '/insights' | '/story'
+  id: '__root__' | '/' | '/connections' | '/explore' | '/insights' | '/story'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ConnectionsRoute: typeof ConnectionsRoute
   ExploreRoute: typeof ExploreRoute
+  InsightsRoute: typeof InsightsRoute
   StoryRoute: typeof StoryRoute
 }
 
@@ -92,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExploreRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/story': {
       id: '/story'
       path: '/story'
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ConnectionsRoute: ConnectionsRoute,
   ExploreRoute: ExploreRoute,
+  InsightsRoute: InsightsRoute,
   StoryRoute: StoryRoute,
 }
 export const routeTree = rootRouteImport
