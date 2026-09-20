@@ -23,7 +23,7 @@ export const Route = createFileRoute("/story")({
 function Story() {
   const chapters = useMemo(() => getChapters(), []);
   const [i, setI] = useState(0);
-  const c = chapters[i];
+  const c = chapters[i]!;
   const search: Record<string, string> = {};
   if (c.filters.source) search.source = c.filters.source;
   if (c.filters.month) search.month = c.filters.month;
@@ -82,7 +82,7 @@ function Story() {
       </article>
 
       <div className="mt-8">
-        <Timeline active={c.filters.month} />
+        <Timeline active={c?.filters.month} />
       </div>
     </Shell>
   );

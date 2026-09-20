@@ -1,6 +1,6 @@
 import { aggregates } from "@/lib/receipts";
 
-export function Timeline({ onPick, active }: { onPick?: (month: string) => void; active?: string }) {
+export function Timeline({ onPick, active }: { onPick?: (month: string) => void; active?: string | undefined }) {
   const monthly = aggregates.monthly as {
     month: string;
     spotify: number;
