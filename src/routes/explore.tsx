@@ -7,12 +7,16 @@ import { ReceiptCard } from "@/components/ReceiptCard";
 import { ReceiptModal } from "@/components/ReceiptModal";
 import { emptyFilters, filterRecords, type Filters, type Receipt } from "@/lib/receipts";
 
-type Search = { source: string; month: string; category: string; q: string };
+type Search = { source?: string; month?: string; category?: string; q?: string };
 
 export const Route = createFileRoute("/explore")({
   validateSearch: (s: Record<string, unknown>): Search => {
-    const pick = (k: string) => (typeof s[k] === "string" ? (s[k] as string) : "");
-    return { source: pick("source"), month: pick("month"), category: pick("category"), q: pick("q") };
+    const out: Search = {};
+    for (const k of ["source", "month", "category", "q"] as const) {
+      const v = s[k];
+      if (typeof v === "string" && v !== "") out[k] = v;
+    }
+    return out;
   },
   head: () => ({
     meta: [

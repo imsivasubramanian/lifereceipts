@@ -32,7 +32,7 @@ export const categoriesBySource: Record<string, string[]> = (() => {
   const map: Record<string, Set<string>> = {};
   for (const r of records) (map[r.source] ||= new Set()).add(r.category);
   const out: Record<string, string[]> = {};
-  for (const k of Object.keys(map)) out[k] = [...map[k]].sort().slice(0, 400);
+  for (const k of Object.keys(map)) out[k] = [...(map[k] ?? [])].sort().slice(0, 400);
   return out;
 })();
 
@@ -133,8 +133,8 @@ export function getConnections(): Connection[] {
     picked.sort((a, b) => (a.timestamp < b.timestamp ? -1 : 1));
     const reasons = ["Same day", `${sources.size} different sources`];
     const spanMin =
-      (new Date(picked[picked.length - 1].timestamp + "Z").getTime() -
-        new Date(picked[0].timestamp + "Z").getTime()) /
+      (new Date(picked[picked.length - 1]!.timestamp + "Z").getTime() -
+        new Date(picked[0]!.timestamp + "Z").getTime()) /
       60000;
     if (spanMin <= 180) reasons.push(`Nearby time (within ${Math.max(1, Math.round(spanMin))} min)`);
     const cats = items.map((i) => i.category);
@@ -177,7 +177,7 @@ export function getChapters(): Chapter[] {
     {
       eyebrow: "Chapter 01",
       title: "The Soundtrack",
-      body: `Between ${a.dateSpan.start} and ${a.dateSpan.end}, ${a.totals.spotifyPlays.toLocaleString()} listening events were recorded — about ${a.totals.listeningHours.toLocaleString()} hours of audio. ${topArtist.name} appears most often with ${topArtist.plays.toLocaleString()} plays. Listening activity peaks around ${peakHour.hour}.`,
+      body: `Between ${a.dateSpan.start} and ${a.dateSpan.end}, ${a.totals.spotifyPlays.toLocaleString()} listening events were recorded — about ${a.totals.listeningHours.toLocaleString()} hours of audio. ${topArtist.name} appears most often with ${topArtist.plays.toLocaleString()} plays. Listening activity peaks around ${peakHour?.hour ?? "—"}.`,
       stats: [
         { label: "Plays", value: a.totals.spotifyPlays.toLocaleString() },
         { label: "Hours", value: a.totals.listeningHours.toLocaleString() },
