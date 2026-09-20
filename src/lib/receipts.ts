@@ -58,9 +58,10 @@ export const emptyFilters: Filters = {
   month: "",
 };
 
-export function filterRecords(f: Filters, limit = 4000): Receipt[] {
+export function filterRecords(f: Filters, limit = 600): { items: Receipt[]; total: number } {
   const q = f.q.trim().toLowerCase();
   const out: Receipt[] = [];
+  let total = 0;
   for (const r of records) {
     if (f.source !== "all" && r.source !== f.source) continue;
     if (f.category !== "all" && r.category !== f.category) continue;
