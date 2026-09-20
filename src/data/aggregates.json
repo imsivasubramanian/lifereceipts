@@ -1,0 +1,1062 @@
+{
+ "totals": {
+  "spotifyPlays": 149860,
+  "spotifySampled": 2498,
+  "transactions": 9417,
+  "household": 1389,
+  "records": 13304,
+  "listeningHours": 5342,
+  "skipRate": 5.3
+ },
+ "topArtists": [
+  {
+   "name": "The Beatles",
+   "plays": 13621
+  },
+  {
+   "name": "The Killers",
+   "plays": 6878
+  },
+  {
+   "name": "John Mayer",
+   "plays": 4855
+  },
+  {
+   "name": "Bob Dylan",
+   "plays": 3814
+  },
+  {
+   "name": "Paul McCartney",
+   "plays": 2697
+  },
+  {
+   "name": "Led Zeppelin",
+   "plays": 2482
+  },
+  {
+   "name": "Johnny Cash",
+   "plays": 2478
+  },
+  {
+   "name": "The Rolling Stones",
+   "plays": 2390
+  },
+  {
+   "name": "Radiohead",
+   "plays": 2305
+  },
+  {
+   "name": "The Black Keys",
+   "plays": 2231
+  }
+ ],
+ "hours": [
+  {
+   "hour": "00h",
+   "count": 10884
+  },
+  {
+   "hour": "01h",
+   "count": 9395
+  },
+  {
+   "hour": "02h",
+   "count": 9029
+  },
+  {
+   "hour": "03h",
+   "count": 8550
+  },
+  {
+   "hour": "04h",
+   "count": 6355
+  },
+  {
+   "hour": "05h",
+   "count": 7164
+  },
+  {
+   "hour": "06h",
+   "count": 7369
+  },
+  {
+   "hour": "07h",
+   "count": 4412
+  },
+  {
+   "hour": "08h",
+   "count": 2312
+  },
+  {
+   "hour": "09h",
+   "count": 1695
+  },
+  {
+   "hour": "10h",
+   "count": 1207
+  },
+  {
+   "hour": "11h",
+   "count": 903
+  },
+  {
+   "hour": "12h",
+   "count": 724
+  },
+  {
+   "hour": "13h",
+   "count": 1658
+  },
+  {
+   "hour": "14h",
+   "count": 2759
+  },
+  {
+   "hour": "15h",
+   "count": 3725
+  },
+  {
+   "hour": "16h",
+   "count": 6737
+  },
+  {
+   "hour": "17h",
+   "count": 9194
+  },
+  {
+   "hour": "18h",
+   "count": 8945
+  },
+  {
+   "hour": "19h",
+   "count": 8165
+  },
+  {
+   "hour": "20h",
+   "count": 10494
+  },
+  {
+   "hour": "21h",
+   "count": 8953
+  },
+  {
+   "hour": "22h",
+   "count": 8715
+  },
+  {
+   "hour": "23h",
+   "count": 10516
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2013-07",
+   "spotify": 115,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2013-08",
+   "spotify": 41,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2013-09",
+   "spotify": 29,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2014-01",
+   "spotify": 23,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2015-01",
+   "spotify": 23,
+   "transactions": 0,
+   "household": 39
+  },
+  {
+   "month": "2015-02",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 31
+  },
+  {
+   "month": "2015-03",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 23
+  },
+  {
+   "month": "2015-04",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 12
+  },
+  {
+   "month": "2015-05",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 11
+  },
+  {
+   "month": "2015-06",
+   "spotify": 121,
+   "transactions": 0,
+   "household": 3
+  },
+  {
+   "month": "2015-07",
+   "spotify": 33,
+   "transactions": 0,
+   "household": 3
+  },
+  {
+   "month": "2015-08",
+   "spotify": 956,
+   "transactions": 0,
+   "household": 7
+  },
+  {
+   "month": "2015-09",
+   "spotify": 710,
+   "transactions": 0,
+   "household": 8
+  },
+  {
+   "month": "2015-10",
+   "spotify": 803,
+   "transactions": 0,
+   "household": 24
+  },
+  {
+   "month": "2015-11",
+   "spotify": 82,
+   "transactions": 0,
+   "household": 13
+  },
+  {
+   "month": "2015-12",
+   "spotify": 81,
+   "transactions": 0,
+   "household": 17
+  },
+  {
+   "month": "2016-01",
+   "spotify": 2,
+   "transactions": 0,
+   "household": 5
+  },
+  {
+   "month": "2016-02",
+   "spotify": 2,
+   "transactions": 0,
+   "household": 16
+  },
+  {
+   "month": "2016-03",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 9
+  },
+  {
+   "month": "2016-04",
+   "spotify": 0,
+   "transactions": 0,
+   "household": 7
+  },
+  {
+   "month": "2016-05",
+   "spotify": 1,
+   "transactions": 0,
+   "household": 10
+  },
+  {
+   "month": "2016-06",
+   "spotify": 897,
+   "transactions": 0,
+   "household": 11
+  },
+  {
+   "month": "2016-07",
+   "spotify": 428,
+   "transactions": 0,
+   "household": 6
+  },
+  {
+   "month": "2016-08",
+   "spotify": 1051,
+   "transactions": 0,
+   "household": 11
+  },
+  {
+   "month": "2016-09",
+   "spotify": 434,
+   "transactions": 0,
+   "household": 9
+  },
+  {
+   "month": "2016-10",
+   "spotify": 404,
+   "transactions": 0,
+   "household": 22
+  },
+  {
+   "month": "2016-11",
+   "spotify": 538,
+   "transactions": 0,
+   "household": 43
+  },
+  {
+   "month": "2016-12",
+   "spotify": 2656,
+   "transactions": 0,
+   "household": 42
+  },
+  {
+   "month": "2017-01",
+   "spotify": 2531,
+   "transactions": 0,
+   "household": 25
+  },
+  {
+   "month": "2017-02",
+   "spotify": 478,
+   "transactions": 0,
+   "household": 48
+  },
+  {
+   "month": "2017-03",
+   "spotify": 1576,
+   "transactions": 0,
+   "household": 49
+  },
+  {
+   "month": "2017-04",
+   "spotify": 1949,
+   "transactions": 0,
+   "household": 33
+  },
+  {
+   "month": "2017-05",
+   "spotify": 1625,
+   "transactions": 0,
+   "household": 68
+  },
+  {
+   "month": "2017-06",
+   "spotify": 1050,
+   "transactions": 0,
+   "household": 40
+  },
+  {
+   "month": "2017-07",
+   "spotify": 3915,
+   "transactions": 0,
+   "household": 58
+  },
+  {
+   "month": "2017-08",
+   "spotify": 3191,
+   "transactions": 0,
+   "household": 56
+  },
+  {
+   "month": "2017-09",
+   "spotify": 5176,
+   "transactions": 0,
+   "household": 54
+  },
+  {
+   "month": "2017-10",
+   "spotify": 2481,
+   "transactions": 0,
+   "household": 35
+  },
+  {
+   "month": "2017-11",
+   "spotify": 1255,
+   "transactions": 0,
+   "household": 77
+  },
+  {
+   "month": "2017-12",
+   "spotify": 1093,
+   "transactions": 0,
+   "household": 61
+  },
+  {
+   "month": "2018-01",
+   "spotify": 1681,
+   "transactions": 0,
+   "household": 63
+  },
+  {
+   "month": "2018-02",
+   "spotify": 1125,
+   "transactions": 0,
+   "household": 42
+  },
+  {
+   "month": "2018-03",
+   "spotify": 785,
+   "transactions": 0,
+   "household": 58
+  },
+  {
+   "month": "2018-04",
+   "spotify": 926,
+   "transactions": 0,
+   "household": 47
+  },
+  {
+   "month": "2018-05",
+   "spotify": 1566,
+   "transactions": 0,
+   "household": 33
+  },
+  {
+   "month": "2018-06",
+   "spotify": 995,
+   "transactions": 0,
+   "household": 51
+  },
+  {
+   "month": "2018-07",
+   "spotify": 803,
+   "transactions": 0,
+   "household": 46
+  },
+  {
+   "month": "2018-08",
+   "spotify": 1446,
+   "transactions": 0,
+   "household": 51
+  },
+  {
+   "month": "2018-09",
+   "spotify": 1470,
+   "transactions": 0,
+   "household": 12
+  },
+  {
+   "month": "2018-10",
+   "spotify": 963,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2018-11",
+   "spotify": 1862,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2018-12",
+   "spotify": 1195,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-01",
+   "spotify": 567,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-02",
+   "spotify": 289,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-03",
+   "spotify": 749,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-04",
+   "spotify": 1565,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-05",
+   "spotify": 236,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-06",
+   "spotify": 728,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-07",
+   "spotify": 1622,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-08",
+   "spotify": 2018,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-09",
+   "spotify": 1339,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-10",
+   "spotify": 2830,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-11",
+   "spotify": 2059,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2019-12",
+   "spotify": 925,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-01",
+   "spotify": 1227,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-02",
+   "spotify": 1036,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-03",
+   "spotify": 1591,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-04",
+   "spotify": 2189,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-05",
+   "spotify": 1609,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-06",
+   "spotify": 1578,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-07",
+   "spotify": 664,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-08",
+   "spotify": 2668,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-09",
+   "spotify": 2886,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-10",
+   "spotify": 3263,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-11",
+   "spotify": 3104,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2020-12",
+   "spotify": 2465,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-01",
+   "spotify": 2635,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-02",
+   "spotify": 2006,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-03",
+   "spotify": 1629,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-04",
+   "spotify": 2940,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-05",
+   "spotify": 1875,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-06",
+   "spotify": 2085,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-07",
+   "spotify": 1161,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-08",
+   "spotify": 1697,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-09",
+   "spotify": 2169,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-10",
+   "spotify": 1952,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-11",
+   "spotify": 1072,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2021-12",
+   "spotify": 1770,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2022-01",
+   "spotify": 1314,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2022-02",
+   "spotify": 1670,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2022-03",
+   "spotify": 1330,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2022-04",
+   "spotify": 971,
+   "transactions": 195,
+   "household": 0
+  },
+  {
+   "month": "2022-05",
+   "spotify": 1187,
+   "transactions": 328,
+   "household": 0
+  },
+  {
+   "month": "2022-06",
+   "spotify": 1856,
+   "transactions": 427,
+   "household": 0
+  },
+  {
+   "month": "2022-07",
+   "spotify": 1695,
+   "transactions": 369,
+   "household": 0
+  },
+  {
+   "month": "2022-08",
+   "spotify": 883,
+   "transactions": 467,
+   "household": 0
+  },
+  {
+   "month": "2022-09",
+   "spotify": 1908,
+   "transactions": 411,
+   "household": 0
+  },
+  {
+   "month": "2022-10",
+   "spotify": 1615,
+   "transactions": 328,
+   "household": 0
+  },
+  {
+   "month": "2022-11",
+   "spotify": 1048,
+   "transactions": 415,
+   "household": 0
+  },
+  {
+   "month": "2022-12",
+   "spotify": 725,
+   "transactions": 363,
+   "household": 0
+  },
+  {
+   "month": "2023-01",
+   "spotify": 1073,
+   "transactions": 427,
+   "household": 0
+  },
+  {
+   "month": "2023-02",
+   "spotify": 935,
+   "transactions": 354,
+   "household": 0
+  },
+  {
+   "month": "2023-03",
+   "spotify": 1018,
+   "transactions": 432,
+   "household": 0
+  },
+  {
+   "month": "2023-04",
+   "spotify": 1045,
+   "transactions": 402,
+   "household": 0
+  },
+  {
+   "month": "2023-05",
+   "spotify": 1400,
+   "transactions": 382,
+   "household": 0
+  },
+  {
+   "month": "2023-06",
+   "spotify": 846,
+   "transactions": 575,
+   "household": 0
+  },
+  {
+   "month": "2023-07",
+   "spotify": 865,
+   "transactions": 418,
+   "household": 0
+  },
+  {
+   "month": "2023-08",
+   "spotify": 854,
+   "transactions": 309,
+   "household": 0
+  },
+  {
+   "month": "2023-09",
+   "spotify": 650,
+   "transactions": 316,
+   "household": 0
+  },
+  {
+   "month": "2023-10",
+   "spotify": 777,
+   "transactions": 417,
+   "household": 0
+  },
+  {
+   "month": "2023-11",
+   "spotify": 785,
+   "transactions": 387,
+   "household": 0
+  },
+  {
+   "month": "2023-12",
+   "spotify": 775,
+   "transactions": 380,
+   "household": 0
+  },
+  {
+   "month": "2024-01",
+   "spotify": 1449,
+   "transactions": 307,
+   "household": 0
+  },
+  {
+   "month": "2024-02",
+   "spotify": 924,
+   "transactions": 331,
+   "household": 0
+  },
+  {
+   "month": "2024-03",
+   "spotify": 700,
+   "transactions": 450,
+   "household": 0
+  },
+  {
+   "month": "2024-04",
+   "spotify": 619,
+   "transactions": 227,
+   "household": 0
+  },
+  {
+   "month": "2024-05",
+   "spotify": 569,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-06",
+   "spotify": 524,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-07",
+   "spotify": 318,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-08",
+   "spotify": 932,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-09",
+   "spotify": 962,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-10",
+   "spotify": 1300,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-11",
+   "spotify": 1425,
+   "transactions": 0,
+   "household": 0
+  },
+  {
+   "month": "2024-12",
+   "spotify": 148,
+   "transactions": 0,
+   "household": 0
+  }
+ ],
+ "txCategories": [
+  {
+   "name": "online shopping",
+   "value": 2367
+  },
+  {
+   "name": "travel",
+   "value": 2238
+  },
+  {
+   "name": "entertainment",
+   "value": 2163
+  },
+  {
+   "name": "fitness and medical",
+   "value": 1907
+  },
+  {
+   "name": "uncategorised",
+   "value": 742
+  }
+ ],
+ "txCategorySpend": [
+  {
+   "name": "travel",
+   "value": 11306900
+  },
+  {
+   "name": "online shopping",
+   "value": 10698394
+  },
+  {
+   "name": "entertainment",
+   "value": 10464405
+  },
+  {
+   "name": "fitness and medical",
+   "value": 8987340
+  },
+  {
+   "name": "uncategorised",
+   "value": 3712029
+  }
+ ],
+ "householdCategories": [
+  {
+   "name": "Fixed Deposit",
+   "value": 450000
+  },
+  {
+   "name": "Share Market",
+   "value": 198500
+  },
+  {
+   "name": "Saving Bank account 1",
+   "value": 152799
+  },
+  {
+   "name": "Transportation",
+   "value": 144049
+  },
+  {
+   "name": "Household",
+   "value": 126040
+  },
+  {
+   "name": "Money transfer",
+   "value": 82023
+  },
+  {
+   "name": "Life Insurance",
+   "value": 77544
+  },
+  {
+   "name": "subscription",
+   "value": 60853
+  },
+  {
+   "name": "Food",
+   "value": 58145
+  },
+  {
+   "name": "Small Cap fund 2",
+   "value": 45000
+  }
+ ],
+ "incomeVsExpense": [
+  {
+   "name": "Income",
+   "value": 2682607
+  },
+  {
+   "name": "Expense",
+   "value": 1695809
+  }
+ ],
+ "bySource": [
+  {
+   "name": "Spotify (sampled)",
+   "value": 2498
+  },
+  {
+   "name": "Transactions",
+   "value": 9417
+  },
+  {
+   "name": "Household",
+   "value": 1389
+  }
+ ],
+ "topLocations": [
+  {
+   "name": "Manipur",
+   "value": 60
+  },
+  {
+   "name": "Nagaland",
+   "value": 50
+  },
+  {
+   "name": "Uttarakhand",
+   "value": 42
+  },
+  {
+   "name": "Bihar",
+   "value": 40
+  },
+  {
+   "name": "Karnataka",
+   "value": 37
+  },
+  {
+   "name": "Hindupur, Odisha",
+   "value": 37
+  },
+  {
+   "name": "Tamil Nadu",
+   "value": 33
+  },
+  {
+   "name": "Telangana",
+   "value": 32
+  },
+  {
+   "name": "Mizoram",
+   "value": 30
+  },
+  {
+   "name": "Kerala",
+   "value": 30
+  },
+  {
+   "name": "Punjab",
+   "value": 29
+  },
+  {
+   "name": "Ramgarh",
+   "value": 25
+  }
+ ],
+ "dateSpan": {
+  "start": "2013-07-08",
+  "end": "2024-12-13"
+ },
+ "categories": 572
+}
