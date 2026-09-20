@@ -50,9 +50,9 @@ function Explore() {
   };
 
   const results = useMemo(() => filterRecords(filters), [filters]);
-  const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
+  const pages = Math.max(1, Math.ceil(results.items.length / PAGE_SIZE));
   const current = Math.min(page, pages - 1);
-  const visible = results.slice(current * PAGE_SIZE, current * PAGE_SIZE + PAGE_SIZE);
+  const visible = results.items.slice(current * PAGE_SIZE, current * PAGE_SIZE + PAGE_SIZE);
 
   return (
     <Shell>
@@ -65,7 +65,7 @@ function Explore() {
         </p>
       </header>
 
-      <FilterBar filters={filters} setFilters={setFilters} resultCount={results.length} />
+      <FilterBar filters={filters} setFilters={setFilters} resultCount={results.total} />
 
       {visible.length === 0 ? (
         <div className="card-surface mt-6 flex flex-col items-center gap-3 p-12 text-center">
