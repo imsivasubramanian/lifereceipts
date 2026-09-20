@@ -77,10 +77,10 @@ export function filterRecords(f: Filters, limit = 4000): Receipt[] {
       )
     )
       continue;
-    out.push(r);
-    if (out.length >= limit) break;
+    total++;
+    if (out.length < limit) out.push(r);
   }
-  return out;
+  return { items: out, total };
 }
 
 export function formatDate(ts: string) {
